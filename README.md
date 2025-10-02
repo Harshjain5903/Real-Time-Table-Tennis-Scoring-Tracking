@@ -1,4 +1,3 @@
-````markdown
 <div id="top"></div>
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -82,7 +81,6 @@ Follow the steps to set up the project locally.
 If you instead want to use a Raspberry Pi, install the Linux distribution of DroidCam. I used a premade [script](https://github.com/IM-TechieScientist/droidcam-raspberrypi-auto-install) and also had to install adb using the following command:
 ```sh
 sudo apt-get install adb
-````
 
 The instructions at the original [source](https://www.dev47apps.com/droidcam/linux/) for linux doesn't translate exactly to Rasbperry Pi. There was also a small issue with the premade script which is discussed [here](https://github.com/IM-TechieScientist/droidcam-raspberrypi-auto-install/issues/2). Additional references that may be helpful: [1](https://github.com/dev47apps/droidcam), [2](https://github.com/dev47apps/droidcam/issues/6). The Raspberry Pi + DroidCam + Android over USB seemed to give a delayed video feed, so the PC method is recommended. Also if you are using the Raspberry Pi, modify the camera source in the camera.py file as the comments advise.
 
