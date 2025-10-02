@@ -1,3 +1,4 @@
+````markdown
 <div id="top"></div>
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -39,7 +40,7 @@
 ## About The Project
 
 <div align="center">
-  <a href="https://github.com/jainr3/TableTennisTracker">
+  <a href="https://github.com/Harshjain5903/Real-Time-Table-Tennis-Scoring-Tracking">
     <img src="img/full2.gif" alt="Tracking">
   </a>
 </div>
@@ -81,14 +82,17 @@ Follow the steps to set up the project locally.
 If you instead want to use a Raspberry Pi, install the Linux distribution of DroidCam. I used a premade [script](https://github.com/IM-TechieScientist/droidcam-raspberrypi-auto-install) and also had to install adb using the following command:
 ```sh
 sudo apt-get install adb
-```
+````
+
 The instructions at the original [source](https://www.dev47apps.com/droidcam/linux/) for linux doesn't translate exactly to Rasbperry Pi. There was also a small issue with the premade script which is discussed [here](https://github.com/IM-TechieScientist/droidcam-raspberrypi-auto-install/issues/2). Additional references that may be helpful: [1](https://github.com/dev47apps/droidcam), [2](https://github.com/dev47apps/droidcam/issues/6). The Raspberry Pi + DroidCam + Android over USB seemed to give a delayed video feed, so the PC method is recommended. Also if you are using the Raspberry Pi, modify the camera source in the camera.py file as the comments advise.
 
 3. Next, clone the repository
+
    ```sh
-   git clone https://github.com/jainr3/TableTennisTracker.git
+   git clone https://github.com/Harshjain5903/Real-Time-Table-Tennis-Scoring-Tracking.git
    ```
 4. Install the required libraries.
+
    ```sh
    pip3 install -r requirements.txt
    ```
@@ -132,6 +136,7 @@ The instructions at the original [source](https://www.dev47apps.com/droidcam/lin
 ### Running the flask app
 
 1. Navigate to the flaskapp folder and run the following command.
+
    ```sh
    python3 app.py
    ```
@@ -146,11 +151,13 @@ The instructions at the original [source](https://www.dev47apps.com/droidcam/lin
 
 ### Accessing the admin page
 
-1. Once the application is running, go to the /login page to login as the administrator. The administrator credentials are: 
+1. Once the application is running, go to the /login page to login as the administrator. The administrator credentials are:
+
    ```sh
    Username: admin
    Password: admin
    ```
+
    In the future, a real database can be connected to allow for more roles and to obfuscate these credentials.
 
 <div align="center">
@@ -180,7 +187,7 @@ The gameplay is tracked via a state machine [(original source)](https://people.e
 To start serving, the server should raise the ball within camera's field of vision until it is above a certain height and a chime is heard. Then the server may begin their serve. The rest of the state transitions follow the diagram where the computer attempts to detect bounces, hits, timeouts, and ball side switches. When a point is scored, another sound will be played. The sound functionality seemed to cause delays in frame processing, so was disabled.
 
 <div align="center">
-  <a href="https://github.com/jainr3/TableTennisTracker">
+  <a href="https://github.com/Harshjain5903/Real-Time-Table-Tennis-Scoring-Tracking">
     <img src="img/bounce.gif" alt="Bounce">
   </a>
 </div>
@@ -190,7 +197,7 @@ To start serving, the server should raise the ball within camera's field of visi
 The Camera has a debug mode as indicated by the flag in the Camera class. When set to true, the debug mode will enable hotbox tracking for the ball, display text whenever a bounce or hit is detected, as well as display the state machine's current state on the camera feed.
 
 <div align="center">
-  <a href="https://github.com/jainr3/TableTennisTracker">
+  <a href="https://github.com/Harshjain5903/Real-Time-Table-Tennis-Scoring-Tracking">
     <img src="img/full.gif" alt="Tracking">
   </a>
 </div>
@@ -217,9 +224,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Rahul Jain - rahul96jain@gmail.com
+Harsh Jain - [harsh.jain16138@sakec.ac.in](mailto:harsh.jain16138@sakec.ac.in)
 
-Project Link: [https://github.com/jainr3/TableTennisTracker](https://github.com/jainr3/TableTennisTracker)
+Project Link: [https://github.com/Harshjain5903/Real-Time-Table-Tennis-Scoring-Tracking](https://github.com/Harshjain5903/Real-Time-Table-Tennis-Scoring-Tracking)
 
 <p align="right">[<a href="#top">Top</a>]</p>
 
@@ -237,13 +244,17 @@ Project Link: [https://github.com/jainr3/TableTennisTracker](https://github.com/
 
 <p align="right">[<a href="#top">Top</a>]</p>
 
-[contributors-shield]: https://img.shields.io/github/contributors/jainr3/TableTennisTracker.svg?style=for-the-badge
-[contributors-url]: https://github.com/jainr3/TableTennisTracker/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/jainr3/TableTennisTracker.svg?style=for-the-badge
-[forks-url]: https://github.com/jainr3/TableTennisTracker/network/members
-[stars-shield]: https://img.shields.io/github/stars/jainr3/TableTennisTracker.svg?style=for-the-badge
-[stars-url]: https://github.com/jainr3/TableTennisTracker/stargazers
-[issues-shield]: https://img.shields.io/github/issues/jainr3/TableTennisTracker.svg?style=for-the-badge
-[issues-url]: https://github.com/jainr3/TableTennisTracker/issues
-[license-shield]: https://img.shields.io/github/license/jainr3/TableTennisTracker.svg?style=for-the-badge
-[license-url]: https://github.com/jainr3/TableTennisTracker/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Harshjain5903/Real-Time-Table-Tennis-Scoring-Tracking.svg?style=for-the-badge
+[contributors-url]: https://github.com/Harshjain5903/Real-Time-Table-Tennis-Scoring-Tracking/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Harshjain5903/Real-Time-Table-Tennis-Scoring-Tracking.svg?style=for-the-badge
+[forks-url]: https://github.com/Harshjain5903/Real-Time-Table-Tennis-Scoring-Tracking/network/members
+[stars-shield]: https://img.shields.io/github/stars/Harshjain5903/Real-Time-Table-Tennis-Scoring-Tracking.svg?style=for-the-badge
+[stars-url]: https://github.com/Harshjain5903/Real-Time-Table-Tennis-Scoring-Tracking/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Harshjain5903/Real-Time-Table-Tennis-Scoring-Tracking.svg?style=for-the-badge
+[issues-url]: https://github.com/Harshjain5903/Real-Time-Table-Tennis-Scoring-Tracking/issues
+[license-shield]: https://img.shields.io/github/license/Harshjain5903/Real-Time-Table-Tennis-Scoring-Tracking.svg?style=for-the-badge
+[license-url]: https://github.com/Harshjain5903/Real-Time-Table-Tennis-Scoring-Tracking/blob/main/LICENSE
+
+```
+::contentReference[oaicite:0]{index=0}
+```
